@@ -7,6 +7,10 @@ fi
 
 cd ~
 
+printf "\n* Update & upgrade system *\n\n"
+
+sudo apt update -y && sudo apt upgrade -y
+
 bash -c "$(wget https://raw.githubusercontent.com/unixslayer/ubuntu-init/master/tools/git.sh -O -)"
 bash -c "$(wget https://raw.githubusercontent.com/unixslayer/ubuntu-init/master/tools/docker.sh -O -)"
 bash -c "$(wget https://raw.githubusercontent.com/unixslayer/ubuntu-init/master/tools/virtualbox.sh -O -)"

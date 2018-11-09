@@ -40,8 +40,8 @@ wget "https://mirrors.xmission.com/ubuntu/pool/universe/g/gnome-python-desktop/$
 wget "https://mirrors.xmission.com/ubuntu/pool/universe/h/hamster-applet/${hamster_deb}"
 wget "http://archive.ubuntu.com/ubuntu/pool/universe/libw/libwnck/${libwnck_common_deb}"
 
-sudo dpkg -i "${libwnck22_deb}"
 sudo dpkg -i "${libwnck_common_deb}"
+sudo dpkg -i "${libwnck22_deb}"
 sudo dpkg -i "${wnck_deb}"
 sudo apt --fix-broken install -y
 sudo apt -y install python-gconf python-gnome2 libbonoboui2-0 libgnomecanvas2-0 libgnomeui-0 python-pyorbit libglade2-0 libbonoboui2-common libgnomecanvas2-common libgnome-keyring0 libgnomeui-common liborbit2 libgnome-keyring-common libidl-2-0
