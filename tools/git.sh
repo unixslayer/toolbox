@@ -44,7 +44,9 @@ done
 
 cd ~
 
-sudo apt install -y -qq git-core
+printf "\n* Installing GIT *\n\nwith additional:\n- gitk\n- git-gui\n\n"
+
+sudo apt install -y -qq git-core git-gui gitk
 
 git --version
 

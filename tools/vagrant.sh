@@ -41,8 +41,14 @@ deb="vagrant_${vagrant_version}_${arch}.deb"
 
 cd ~
 
+printf "\n* Installing Vagrant *\n\n"
+
 wget "https://releases.hashicorp.com/vagrant/${vagrant_version}/${deb}"
 
 sudo dpkg -i "${deb}"
 
 rm "${deb}"
+
+printf "\n* Installing vagrant-bindfs plugin *\n\n"
+
+vagrant plugin install vagrant-bindfs

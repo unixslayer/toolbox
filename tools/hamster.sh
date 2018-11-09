@@ -27,6 +27,8 @@ done
 
 cd ~
 
+printf "\n* Installing Hamster Time Tracker *\n\n"
+
 arch=$(dpkg --print-architecture)
 python_deb="python-wnck_2.32.0+dfsg-4_${arch}.deb"
 
