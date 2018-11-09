@@ -12,6 +12,7 @@ To install everything:
 
 - GIT - with additional configuration possible
 - Docker - with docker-compose and docker-machine
+- Hamster Time Tracker
 
 ### GIT installation options
 

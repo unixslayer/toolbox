@@ -5,6 +5,8 @@ if [ "$(id -u)" == "0" ]; then
    exit 1
 fi
 
+cd ~
+
 ARGUMENT_LIST=(
     "git-user"
     "git-email"
