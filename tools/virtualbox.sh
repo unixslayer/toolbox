@@ -5,6 +5,26 @@ if [ "$(id -u)" == "0" ]; then
    exit 1
 fi
 
+opts=$(getopt \
+    --longoptions "skip-vbox" \
+    --name "$(basename "$0")" \
+    --options "" \
+    -- "$@"
+)
+
+eval set --$opts
+
+while [[ $# -gt 0 ]]; do
+  case "$1" in
+    --skip-vbox)
+      exit 0;
+      ;;
+    *)
+      break
+      ;;
+  esac
+done
+
 cd ~
 
 wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -

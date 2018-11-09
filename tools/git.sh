@@ -5,14 +5,11 @@ if [ "$(id -u)" == "0" ]; then
    exit 1
 fi
 
-cd ~
-
 ARGUMENT_LIST=(
     "git-user"
     "git-email"
 )
 
-# read arguments
 opts=$(getopt \
     --longoptions "$(printf "%s:," "${ARGUMENT_LIST[@]}")" \
     --longoptions "skip-git" \
@@ -44,6 +41,8 @@ while [[ $# -gt 0 ]]; do
       ;;
   esac
 done
+
+cd ~
 
 sudo apt install -y -qq git-core
 
