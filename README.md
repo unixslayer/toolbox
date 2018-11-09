@@ -2,6 +2,12 @@
 
 This repo holds some scripts to install tools for web development on Ubuntu
 
+## Usage
+
+To install everything:
+
+`bash -c "$(wget https://raw.githubusercontent.com/unixslayer/ubuntu-init/master/environment.sh -O -)"`
+
 ## Current installs
 
 - GIT - with additional configuration possible

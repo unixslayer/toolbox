@@ -5,5 +5,6 @@ if [ "$(id -u)" == "0" ]; then
    exit 1
 fi
 
-source $(pwd)/tools/git.sh
-source $(pwd)/tools/docker.sh
+bash -c "$(wget https://raw.githubusercontent.com/unixslayer/ubuntu-init/master/tools/git.sh -O -)"
+bash -c "$(wget https://raw.githubusercontent.com/unixslayer/ubuntu-init/master/tools/docker.sh -O -)"
+bash -c "$(wget https://raw.githubusercontent.com/unixslayer/ubuntu-init/master/tools/php.sh -O -)"

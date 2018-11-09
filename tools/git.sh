@@ -13,6 +13,7 @@ ARGUMENT_LIST=(
 # read arguments
 opts=$(getopt \
     --longoptions "$(printf "%s:," "${ARGUMENT_LIST[@]}")" \
+    --longoptions "skip-git" \
     --name "$(basename "$0")" \
     --options "" \
     -- "$@"
@@ -25,6 +26,9 @@ git_user=""
 
 while [[ $# -gt 0 ]]; do
   case "$1" in
+    --skip-git)
+      exit 0;
+      ;;
     --git-email)
       git_email=$2
       shift 2
