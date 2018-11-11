@@ -108,7 +108,7 @@ fi
 
 printf "\n* Update & upgrade system *\n\n"
 
-sudo apt update -y && sudo apt upgrade -y
+#sudo apt update -y && sudo apt upgrade -y
 
 while [ $# -gt 0 ]
 do
