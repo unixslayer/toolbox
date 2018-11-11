@@ -13,7 +13,6 @@ ARGUMENT_LIST=(
 
 opts=$(getopt \
     --longoptions "$(printf "%s:," "${ARGUMENT_LIST[@]}")" \
-    --longoptions "skip-php" \
     --name "$(basename "$0")" \
     --options "" \
     -- "$@"
@@ -23,9 +22,6 @@ eval set --$opts
 
 while [[ $# -gt 0 ]]; do
   case "$1" in
-    --skip-php)
-      exit 0;
-      ;;
     --php-version)
       php_version=$2
       shift 2

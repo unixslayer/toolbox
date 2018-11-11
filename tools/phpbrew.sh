@@ -5,26 +5,6 @@ if [ "$(id -u)" == "0" ]; then
    exit 1
 fi
 
-opts=$(getopt \
-    --longoptions "skip-phpbrew" \
-    --name "$(basename "$0")" \
-    --options "" \
-    -- "$@"
-)
-
-eval set --$opts
-
-while [[ $# -gt 0 ]]; do
-  case "$1" in
-    --skip-phpbrew)
-      exit 0;
-      ;;
-    *)
-      break
-      ;;
-  esac
-done
-
 cd ~
 
 printf "\n* Installing PHPBrew *\n\n"

@@ -5,26 +5,6 @@ if [ "$(id -u)" == "0" ]; then
    exit 1
 fi
 
-opts=$(getopt \
-    --longoptions "skip-zsh" \
-    --name "$(basename "$0")" \
-    --options "" \
-    -- "$@"
-)
-
-eval set --$opts
-
-while [[ $# -gt 0 ]]; do
-  case "$1" in
-    --skip-zsh)
-      exit 0;
-      ;;
-    *)
-      break
-      ;;
-  esac
-done
-
 cd ~
 
 printf "\n* Ensure zsh is installed *\n\n"

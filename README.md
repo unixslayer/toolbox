@@ -4,7 +4,9 @@ This repo holds some scripts to install tools for web development on Ubuntu
 
 ## Usage
 
-`bash -c "$(wget https://raw.githubusercontent.com/unixslayer/ubuntu-init/master/environment.sh -O -)"`
+Following command will install all included tool
+
+`bash -c "$(wget https://raw.githubusercontent.com/unixslayer/ubuntu-init/master/environment.sh -O -)" all`
 
 ## Current installs
 
@@ -18,21 +20,69 @@ This repo holds some scripts to install tools for web development on Ubuntu
 - [PHPBrew](https://github.com/phpbrew/phpbrew)
 - [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh)
 
-### GIT installation options
+### GIT
 
-Some options let you setup configuration:
+To separately install GIT, use following command:
+
+`bash -c "$(wget https://raw.githubusercontent.com/unixslayer/ubuntu-init/master/tools/git.sh -O -)"`
+
+Additional configuration:
 
 - `--git-user` - allows to set GIT user.name in global configuration
 - `--git-email` - allows to set GIT user.email in global configuration
 
-And some let you skip installations
+### Docker
 
-- `--skip-git` - skip GIT installation
-- `--skip-docker` - skip Docker installation
-- `--skip-ansible` - skip Ansible installation
-- `--skip-hamster` - skip Hamster Time Tracker installation
-- `--skip-vagrant` - skip Vagrant installation
-- `--skip-vbox` - skip Virtualbox installation
-- `--skip-php` - skip PHP installation
-- `--skip-phpbrew` - skip PHPBrew installation
-- `--skip-zsh` - skip Oh My Zsh installation
+To separately install Docker, use following command:
+
+`bash -c "$(wget https://raw.githubusercontent.com/unixslayer/ubuntu-init/master/tools/docker.sh -O -)"`
+
+### Ansible
+
+To separately install Ansible, use following command:
+
+`bash -c "$(wget https://raw.githubusercontent.com/unixslayer/ubuntu-init/master/tools/ansible.sh -O -)"`
+
+### Hamster
+
+To separately install Hamster, use following command:
+
+`bash -c "$(wget https://raw.githubusercontent.com/unixslayer/ubuntu-init/master/tools/hamster.sh -O -)"`
+
+### VirtualBox
+
+To separately install VirtualBox, use following command:
+
+`bash -c "$(wget https://raw.githubusercontent.com/unixslayer/ubuntu-init/master/tools/virtualbox.sh -O -)"`
+
+### Vagrant
+
+To separately install Vagrant, use following command:
+
+`bash -c "$(wget https://raw.githubusercontent.com/unixslayer/ubuntu-init/master/tools/vagrant.sh -O -)"`
+
+Additional configuration:
+
+- `--vagrant-version` - Vagrant version to install. Default is 2.2.0
+
+### Oh My Zsh
+
+To separately install Oh My Zsh, use following command:
+
+`bash -c "$(wget https://raw.githubusercontent.com/unixslayer/ubuntu-init/master/tools/zsh.sh -O -)"`
+
+### PHP
+
+To separately install GIT, use following command:
+
+`bash -c "$(wget https://raw.githubusercontent.com/unixslayer/ubuntu-init/master/tools/php.sh -O -)"`
+
+Additional configuration:
+
+- `--php-version` - PHP version to install. Default is 7.2
+
+### PHPBrew
+
+To separately install PHPBrew, use following command:
+
+`bash -c "$(wget https://raw.githubusercontent.com/unixslayer/ubuntu-init/master/tools/phpbrew.sh -O -)"`

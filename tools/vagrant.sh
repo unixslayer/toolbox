@@ -14,7 +14,6 @@ ARGUMENT_LIST=(
 
 opts=$(getopt \
     --longoptions "$(printf "%s:," "${ARGUMENT_LIST[@]}")" \
-    --longoptions "skip-vagrant" \
     --name "$(basename "$0")" \
     --options "" \
     -- "$@"
@@ -24,9 +23,6 @@ eval set --$opts
 
 while [[ $# -gt 0 ]]; do
   case "$1" in
-    --skip-vagrant)
-      exit 0;
-      ;;
     --vagrant-version)
       vagrant_version=$2
       shift 2
