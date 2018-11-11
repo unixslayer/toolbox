@@ -1,4 +1,4 @@
-# Ubuntu initial software
+# Tooler
 
 This repo holds some scripts to install tools for web development on Ubuntu
 
@@ -8,7 +8,7 @@ Following command will install all included tool
 
 `bash -c "$(wget https://raw.githubusercontent.com/unixslayer/ubuntu-init/master/environment.sh -O -)" all`
 
-## Current installs
+## Currently included tools
 
 - [GIT](https://git-scm.com) - with additional configuration possible. GIT will be installed with [gitk](https://git-scm.com/docs/gitk) and [git-gui](https://git-scm.com/docs/git-gui).
 - [Docker](https://docs.docker.com) - with docker-compose and docker-machine
