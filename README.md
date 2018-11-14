@@ -6,7 +6,7 @@ This repo holds some scripts to install tools for web development on Ubuntu
 
 Following command will install all included tool
 
-`bash -c "$(wget https://raw.githubusercontent.com/unixslayer/ubuntu-init/master/environment.sh -O -)" all`
+`bash -c "$(wget https://raw.githubusercontent.com/unixslayer/tooler/master/tooler.sh -O -)" all`
 
 ## Currently included tools
 
@@ -26,7 +26,7 @@ Following command will install all included tool
 
 To separately install GIT, use following command:
 
-`bash -c "$(wget https://raw.githubusercontent.com/unixslayer/ubuntu-init/master/tools/git.sh -O -)"`
+`bash -c "$(wget https://raw.githubusercontent.com/unixslayer/tooler/master/tools/git.sh -O -)"`
 
 Additional configuration:
 
@@ -38,31 +38,31 @@ Additional configuration:
 
 To separately install Docker, use following command:
 
-`bash -c "$(wget https://raw.githubusercontent.com/unixslayer/ubuntu-init/master/tools/docker.sh -O -)"`
+`bash -c "$(wget https://raw.githubusercontent.com/unixslayer/tooler/master/tools/docker.sh -O -)"`
 
 ### Ansible
 
 To separately install Ansible, use following command:
 
-`bash -c "$(wget https://raw.githubusercontent.com/unixslayer/ubuntu-init/master/tools/ansible.sh -O -)"`
+`bash -c "$(wget https://raw.githubusercontent.com/unixslayer/tooler/master/tools/ansible.sh -O -)"`
 
 ### Hamster
 
 To separately install Hamster, use following command:
 
-`bash -c "$(wget https://raw.githubusercontent.com/unixslayer/ubuntu-init/master/tools/hamster.sh -O -)"`
+`bash -c "$(wget https://raw.githubusercontent.com/unixslayer/tooler/master/tools/hamster.sh -O -)"`
 
 ### VirtualBox
 
 To separately install VirtualBox, use following command:
 
-`bash -c "$(wget https://raw.githubusercontent.com/unixslayer/ubuntu-init/master/tools/virtualbox.sh -O -)"`
+`bash -c "$(wget https://raw.githubusercontent.com/unixslayer/tooler/master/tools/virtualbox.sh -O -)"`
 
 ### Vagrant
 
 To separately install Vagrant, use following command:
 
-`bash -c "$(wget https://raw.githubusercontent.com/unixslayer/ubuntu-init/master/tools/vagrant.sh -O -)"`
+`bash -c "$(wget https://raw.githubusercontent.com/unixslayer/tooler/master/tools/vagrant.sh -O -)"`
 
 Additional configuration:
 
@@ -72,13 +72,13 @@ Additional configuration:
 
 To separately install Oh My Zsh, use following command:
 
-`bash -c "$(wget https://raw.githubusercontent.com/unixslayer/ubuntu-init/master/tools/zsh.sh -O -)"`
+`bash -c "$(wget https://raw.githubusercontent.com/unixslayer/tooler/master/tools/zsh.sh -O -)"`
 
 ### PHP
 
 To separately install GIT, use following command:
 
-`bash -c "$(wget https://raw.githubusercontent.com/unixslayer/ubuntu-init/master/tools/php.sh -O -)"`
+`bash -c "$(wget https://raw.githubusercontent.com/unixslayer/tooler/master/tools/php.sh -O -)"`
 
 Additional configuration:
 
@@ -88,16 +88,16 @@ Additional configuration:
 
 To separately install PHPBrew, use following command:
 
-`bash -c "$(wget https://raw.githubusercontent.com/unixslayer/ubuntu-init/master/tools/phpbrew.sh -O -)"`
+`bash -c "$(wget https://raw.githubusercontent.com/unixslayer/tooler/master/tools/phpbrew.sh -O -)"`
 
 ### Wavebox
 
 To separately install Wavebox, use following command:
 
-`bash -c "$(wget https://raw.githubusercontent.com/unixslayer/ubuntu-init/master/tools/wavebox.sh -O -)"`
+`bash -c "$(wget https://raw.githubusercontent.com/unixslayer/tooler/master/tools/wavebox.sh -O -)"`
 
 ### Dropbox
 
 To separately install Dropbox, use following command:
 
-`bash -c "$(wget https://raw.githubusercontent.com/unixslayer/ubuntu-init/master/tools/dropbox.sh -O -)"`
+`bash -c "$(wget https://raw.githubusercontent.com/unixslayer/tooler/master/tools/dropbox.sh -O -)"`
