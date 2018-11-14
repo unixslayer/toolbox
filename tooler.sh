@@ -161,3 +161,6 @@ do
     fi
     shift
 done
+
+sudo apt -y autoremove
+sudo apt -y autoclean
