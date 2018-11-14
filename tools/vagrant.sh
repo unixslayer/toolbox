@@ -48,3 +48,7 @@ rm "${deb}"
 printf "\n* Installing vagrant-bindfs plugin *\n\n"
 
 vagrant plugin install vagrant-bindfs
+
+printf "\n* Installing NFS Server for folder sharing *\n\n"
+
+sudo apt -y install nfs-kernel-server
