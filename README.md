@@ -19,6 +19,7 @@ Following command will install all included tool
 - [PHP](https://php.net) - by default PHP7.2 with [Composer](https://getcomposer.org)
 - [PHPBrew](https://github.com/phpbrew/phpbrew)
 - [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh)
+- [Wavebox](https://wavebox.io/)
 
 ### GIT
 
@@ -86,3 +87,15 @@ Additional configuration:
 To separately install PHPBrew, use following command:
 
 `bash -c "$(wget https://raw.githubusercontent.com/unixslayer/ubuntu-init/master/tools/phpbrew.sh -O -)"`
+
+### Wavebox
+
+To separately install Wavebox, use following command:
+
+`bash -c "$(wget https://raw.githubusercontent.com/unixslayer/ubuntu-init/master/tools/wavebox.sh -O -)"`
+
+### Dropbox
+
+To separately install Dropbox, use following command:
+
+`bash -c "$(wget https://raw.githubusercontent.com/unixslayer/ubuntu-init/master/tools/dropbox.sh -O -)"`

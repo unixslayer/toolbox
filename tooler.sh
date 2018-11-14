@@ -58,17 +58,29 @@ install_phpbrew () {
   bash -c "$(wget https://raw.githubusercontent.com/unixslayer/ubuntu-init/master/tools/phpbrew.sh -O -)"
 }
 
+install_wavebox () {
+  printf "\n${green}* Installing Wavebox *${reset}\n\n"
+  bash -c "$(wget https://raw.githubusercontent.com/unixslayer/ubuntu-init/master/tools/wavebox.sh -O -)"
+}
+
+install_dropbox () {
+  printf "\n${green}* Installing Dropbox *${reset}\n\n"
+  bash -c "$(wget https://raw.githubusercontent.com/unixslayer/ubuntu-init/master/tools/dropbox.sh -O -)"
+}
+
 print_help () {
   cat <<HEREDOC
+
+${yellow}--- TOOLER ---${reset}
 
 Development toolkit installer for ${blue}Ubuntu 18.04${reset}
 
 USAGE:
 ${green}
-  \$ wget https://raw.githubusercontent.com/unixslayer/ubuntu-init/master/environment.sh
-  \$ chmod +x environment.sh
+  \$ wget https://raw.githubusercontent.com/unixslayer/ubuntu-init/master/tooler.sh
+  \$ chmod +x tooler.sh
 
-  \$ ./environment.sh ${red}[tool,] ${yellow}<tool parameter>
+  \$ ./tooler.sh ${red}[tool,] ${yellow}<tool parameter>
 ${reset}
 AVAILABLE TOOLS:
   - git
@@ -80,22 +92,24 @@ AVAILABLE TOOLS:
   - virtualbox
   - zsh
   - hamster
+  - wavebox
+  - dropbox
 
 EXAMPLE:
 
 To install GIT with additional user configuration:
 ${green}
-  \$ ./environment.sh git --git-user=ubuntu --git-email=user@ubuntu.com
+  \$ ./tooler.sh git --git-user=ubuntu --git-email=user@ubuntu.com
 ${reset}
 
 To install GIT, Docker and Virtualbox:
 ${green}
-  \$ ./environment.sh git docker virtualbox
+  \$ ./tooler.sh git docker virtualbox
 ${reset}
 
 To install everything:
 ${green}
-  \$ ./environment.sh all
+  \$ ./tooler.sh all
 ${reset}
 
 HEREDOC
@@ -106,9 +120,9 @@ if [ "$#" == 0 ]; then
     exit
 fi
 
-printf "\n* Update & upgrade system *\n\n"
+printf "\n${red}* Update & upgrade system *${reset}\n\n"
 
-#sudo apt update -y && sudo apt upgrade -y
+sudo apt update -y && sudo apt upgrade -y
 
 while [ $# -gt 0 ]
 do
@@ -138,6 +152,12 @@ do
     fi
     if [ $1 == 'all' -o $1 == 'phpbrew' ]; then
       install_phpbrew
+    fi
+    if [ $1 == 'all' -o $1 == 'wavebox' ]; then
+      install_wavebox
+    fi
+    if [ $1 == 'all' -o $1 == 'dropbox' ]; then
+      install_dropbox
     fi
     shift
 done
