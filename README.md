@@ -6,7 +6,7 @@ This repo holds some scripts to install tools for web development on Ubuntu
 
 Following command will install all included tool
 
-`bash -c "$(wget https://raw.githubusercontent.com/unixslayer/tooler/master/tooler.sh -O -)" all`
+`bash -c "$(wget https://raw.githubusercontent.com/unixslayer/tooler/master/tooler.sh -O -)" -s -- all`
 
 ## Currently included tools
 
