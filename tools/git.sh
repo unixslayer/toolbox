@@ -12,6 +12,7 @@ ARGUMENT_LIST=(
 
 opts=$(getopt \
     --longoptions "$(printf "%s:," "${ARGUMENT_LIST[@]}")" \
+    --longoptions git-gui \
     --name "$(basename "$0")" \
     --options "" \
     -- "$@"
@@ -21,13 +22,18 @@ eval set --$opts
 
 git_email=""
 git_user=""
+git_gui=0
 
 while [[ $# -gt 0 ]]; do
   case "$1" in
-    --git-email)
-      git_email=$2
+    --git-gui)
+      git_gui=1
       shift 2
       ;;
+  --git-email)
+    git_email=$2
+    shift 2
+    ;;
     --git-user)
       git_user=$2
       shift 2
@@ -40,9 +46,14 @@ done
 
 cd ~
 
-printf "\n* Installing GIT *\n\nwith additional:\n- gitk\n- git-gui\n\n"
+printf "\n* Installing GIT *\n"
 
-sudo apt install -y -qq git-core git-gui gitk
+sudo apt install -y -qq git-core
+
+if [ $git_gui -eq 1 ]; then
+  printf "\n\ninstalling git-gui\n\n"
+  sudo apt install -y -qq git-gui gitk
+fi
 
 git --version
 

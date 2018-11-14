@@ -10,7 +10,7 @@ Following command will install all included tool
 
 ## Currently included tools
 
-- [GIT](https://git-scm.com) - with additional configuration possible. GIT will be installed with [gitk](https://git-scm.com/docs/gitk) and [git-gui](https://git-scm.com/docs/git-gui).
+- [GIT](https://git-scm.com)
 - [Docker](https://docs.docker.com) - with docker-compose and docker-machine
 - [Ansible](https://docs.ansible.com/)
 - [Vagrant](https://vagrantup.com)
@@ -30,6 +30,7 @@ To separately install GIT, use following command:
 
 Additional configuration:
 
+- `--git-gui` - allows to install with additional [gitk](https://git-scm.com/docs/gitk) and [git-gui](https://git-scm.com/docs/git-gui)
 - `--git-user` - allows to set GIT user.name in global configuration
 - `--git-email` - allows to set GIT user.email in global configuration
 

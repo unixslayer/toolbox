@@ -97,9 +97,9 @@ AVAILABLE TOOLS:
 
 EXAMPLE:
 
-To install GIT with additional user configuration:
+To install GIT with git-gui and additional user configuration:
 ${green}
-  \$ ./tooler.sh git --git-user=ubuntu --git-email=user@ubuntu.com
+  \$ ./tooler.sh git --git-user=ubuntu --git-email=user@ubuntu.com --git-gui
 ${reset}
 
 To install GIT, Docker and Virtualbox:
