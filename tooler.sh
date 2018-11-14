@@ -117,7 +117,7 @@ if [ "$#" == 0 ]; then
     exit
 fi
 
-printf "\n${red}* Update & upgrade system *${reset}\n\n"
+printf "\n${yellow}* Update & upgrade system *${reset}\n\n"
 
 sudo apt update -y && sudo apt upgrade -y
 
@@ -158,6 +158,8 @@ do
     fi
     shift
 done
+
+printf "\n${yellow}* Cleanup *${reset}\n\n"
 
 sudo apt -y autoremove
 sudo apt -y autoclean
