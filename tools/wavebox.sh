@@ -11,5 +11,6 @@ arch=$(arch)
 
 wget -qO - https://wavebox.io/dl/client/repo/archive.key | sudo apt-key add -
 echo "deb https://wavebox.io/dl/client/repo/ ${arch}/" | sudo tee --append /etc/apt/sources.list.d/repo.list
-sudo apt update -y
-sudo apt install -y wavebox
+sudo apt -y update
+sudo apt -y install wavebox
+sudo apt -y install ttf-mscorefonts-installer
