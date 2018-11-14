@@ -20,6 +20,7 @@ Following command will install all included tool
 - [PHPBrew](https://github.com/phpbrew/phpbrew)
 - [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh)
 - [Wavebox](https://wavebox.io/)
+- [Dropbox](https://www.dropbox.com/)
 
 ### GIT
 
