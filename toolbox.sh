@@ -15,69 +15,69 @@ reset=`tput sgr0`
 
 install_git () {
   printf "\n${green}* Installing GIT *${reset}\n\n"
-  bash -c "$(wget https://raw.githubusercontent.com/unixslayer/tooler/master/tools/git.sh -O -)" -s -- "$@"
+  bash -c "$(wget https://raw.githubusercontent.com/unixslayer/toolbox/master/tools/git.sh -O -)" -s -- "$@"
 }
 
 install_docker () {
   printf "\n${green}* Installing Docker *${reset}\n\n"
-  bash -c "$(wget https://raw.githubusercontent.com/unixslayer/tooler/master/tools/docker.sh -O -)" -s -- "$@"
+  bash -c "$(wget https://raw.githubusercontent.com/unixslayer/toolbox/master/tools/docker.sh -O -)" -s -- "$@"
 }
 
 install_virtualbox () {
   printf "\n${green}* Installing Virtualbox *${reset}\n\n"
-  bash -c "$(wget https://raw.githubusercontent.com/unixslayer/tooler/master/tools/virtualbox.sh -O -)" -s -- "$@"
+  bash -c "$(wget https://raw.githubusercontent.com/unixslayer/toolbox/master/tools/virtualbox.sh -O -)" -s -- "$@"
 }
 
 install_vagrant () {
   printf "\n${green}* Installing Vagrant *${reset}\n\n"
-  bash -c "$(wget https://raw.githubusercontent.com/unixslayer/tooler/master/tools/vagrant.sh -O -)" -s -- "$@"
+  bash -c "$(wget https://raw.githubusercontent.com/unixslayer/toolbox/master/tools/vagrant.sh -O -)" -s -- "$@"
 }
 
 install_hamster () {
   printf "\n${green}* Installing Hamster *${reset}\n\n"
-  bash -c "$(wget https://raw.githubusercontent.com/unixslayer/tooler/master/tools/hamster.sh -O -)" -s -- "$@"
+  bash -c "$(wget https://raw.githubusercontent.com/unixslayer/toolbox/master/tools/hamster.sh -O -)" -s -- "$@"
 }
 
 install_ansible () {
   printf "\n${green}* Installing Ansible *${reset}\n\n"
-  bash -c "$(wget https://raw.githubusercontent.com/unixslayer/tooler/master/tools/ansible.sh -O -)" -s -- "$@"
+  bash -c "$(wget https://raw.githubusercontent.com/unixslayer/toolbox/master/tools/ansible.sh -O -)" -s -- "$@"
 }
 
 install_zsh () {
   printf "\n${green}* Installing Oh My Zsh *${reset}\n\n"
-  bash -c "$(wget https://raw.githubusercontent.com/unixslayer/tooler/master/tools/zsh.sh -O -)" -s -- "$@"
+  bash -c "$(wget https://raw.githubusercontent.com/unixslayer/toolbox/master/tools/zsh.sh -O -)" -s -- "$@"
 }
 
 install_php () {
   printf "\n${green}* Installing PHP *${reset}\n\n"
-  bash -c "$(wget https://raw.githubusercontent.com/unixslayer/tooler/master/tools/php.sh -O -)" -s -- "$@"
+  bash -c "$(wget https://raw.githubusercontent.com/unixslayer/toolbox/master/tools/php.sh -O -)" -s -- "$@"
 }
 
 install_phpbrew () {
   printf "\n${green}* Installing PHPBrew *${reset}\n\n"
-  bash -c "$(wget https://raw.githubusercontent.com/unixslayer/tooler/master/tools/phpbrew.sh -O -)" -s -- "$@"
+  bash -c "$(wget https://raw.githubusercontent.com/unixslayer/toolbox/master/tools/phpbrew.sh -O -)" -s -- "$@"
 }
 
 install_wavebox () {
   printf "\n${green}* Installing Wavebox *${reset}\n\n"
-  bash -c "$(wget https://raw.githubusercontent.com/unixslayer/tooler/master/tools/wavebox.sh -O -)" -s -- "$@"
+  bash -c "$(wget https://raw.githubusercontent.com/unixslayer/toolbox/master/tools/wavebox.sh -O -)" -s -- "$@"
 }
 
 install_dropbox () {
   printf "\n${green}* Installing Dropbox *${reset}\n\n"
-  bash -c "$(wget https://raw.githubusercontent.com/unixslayer/tooler/master/tools/dropbox.sh -O -)" -s -- "$@"
+  bash -c "$(wget https://raw.githubusercontent.com/unixslayer/toolbox/master/tools/dropbox.sh -O -)" -s -- "$@"
 }
 
 print_help () {
   cat <<HEREDOC
 
-${yellow}--- TOOLER ---${reset}
+${yellow}--- toolbox ---${reset}
 
 Development toolkit installer for ${blue}Ubuntu 18.04${reset}
 
 USAGE:
 ${green}
-  \$ ./tooler.sh ${red}[tool,] ${yellow}<tool parameter>
+  \$ ./toolbox.sh ${red}[tool,] ${yellow}<tool parameter>
 ${reset}
 AVAILABLE TOOLS:
   - git
@@ -96,17 +96,17 @@ EXAMPLE:
 
 To install GIT with git-gui and additional user configuration:
 ${green}
-  \$ ./tooler.sh git --git-user=ubuntu --git-email=user@ubuntu.com --git-gui
+  \$ ./toolbox.sh git --git-user=ubuntu --git-email=user@ubuntu.com --git-gui
 ${reset}
 
 To install GIT, Docker and Virtualbox:
 ${green}
-  \$ ./tooler.sh git docker virtualbox
+  \$ ./toolbox.sh git docker virtualbox
 ${reset}
 
 To install everything:
 ${green}
-  \$ ./tooler.sh all
+  \$ ./toolbox.sh all
 ${reset}
 
 HEREDOC
